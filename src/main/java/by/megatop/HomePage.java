@@ -14,4 +14,8 @@ public class HomePage {
     public String getCopyRightText(){
        return driver.findElement(By.xpath(HomePageLocator.COPY_RIGHT_XPATH)).getText();
     }
+
+    public void clickLoginBtn(){
+        driver.findElement(By.xpath(HomePageLocator.PROFILE_BTN_XPATH)).click();
+    }
 }
