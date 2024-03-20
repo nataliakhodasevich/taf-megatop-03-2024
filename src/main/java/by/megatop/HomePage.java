@@ -18,4 +18,8 @@ public class HomePage {
     public void clickLoginBtn(){
         driver.findElement(By.xpath(HomePageLocator.PROFILE_BTN_XPATH)).click();
     }
+
+    public void clickYesCityBtn(){
+        driver.findElement(By.xpath(HomePageLocator.SELECT_CITY_YES_BTN)).click();
+    }
 }
