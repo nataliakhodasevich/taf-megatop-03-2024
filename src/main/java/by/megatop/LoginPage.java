@@ -34,20 +34,20 @@ public class LoginPage {
     }
 
     public void clickLoginBtn(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PHONE_XPATH)));
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PHONE_XPATH)));
         driver.findElement(By.xpath(LoginPageLocator.LOGIN_BTN_XPATH)).click();
     }
 
     public String getErrorText(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PHONE_XPATH)));
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PHONE_XPATH)));
        return driver.findElement(By.xpath(LoginPageLocator.ERROR_WRONG_PHONE_OR_PWD)).getText();
     }
 
     public void sendKeysPwd(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PWD_XPATH)));
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PWD_XPATH)));
 
 
         driver.findElement(By.xpath(LoginPageLocator.PWD_XPATH)).sendKeys(Utils.generateNumber());
