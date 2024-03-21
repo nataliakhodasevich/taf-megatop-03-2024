@@ -6,8 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class SearchTest extends BaseTest {
-
-    @Test
+   @Test
     @DisplayName("Search results displayed")
     public void testSearch() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
@@ -16,6 +15,6 @@ public class SearchTest extends BaseTest {
         homePage.clickSearchBtn();
         homePage.senKeysSearchInput("туфли");
         homePage.clickFirstItemSearchResults();
-        Assertions.assertEquals("Tуфли", homePage.getItemTitle());
+        Assertions.assertEquals("Туфли", homePage.getItemTitle());
     }
 }

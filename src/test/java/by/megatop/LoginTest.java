@@ -12,6 +12,7 @@ public class LoginTest extends BaseTest {
     public void isLoginPageOpened() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
+        homePage.clickYesCookie();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         Assertions.assertEquals("ВХОД", loginPage.getLoginPageTitle());
@@ -22,6 +23,7 @@ public class LoginTest extends BaseTest {
     public void testPhonePwdEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
+        homePage.clickYesCookie();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickLoginBtn();
@@ -33,6 +35,7 @@ public class LoginTest extends BaseTest {
     public void testPhoneEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
+        homePage.clickYesCookie();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.sendKeysPwd();
@@ -45,6 +48,7 @@ public class LoginTest extends BaseTest {
     public void testPwdEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
+        homePage.clickYesCookie();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.sendKeysPhone();
@@ -57,6 +61,7 @@ public class LoginTest extends BaseTest {
     public void testPwdPhoneInvalid() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
+        homePage.clickYesCookie();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.sendKeysPhone();
