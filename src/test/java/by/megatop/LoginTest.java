@@ -1,12 +1,14 @@
 package by.megatop;
-
+import by.megatop.pages.HomePage;
+import by.megatop.pages.LoginPage;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
 
 public class LoginTest extends BaseTest {
 
     @Test
+    @DisplayName("Check page is opened")
     public void isLoginPageOpened() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
@@ -16,6 +18,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("Check login with both fields empty")
     public void testPhonePwdEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
@@ -26,6 +29,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("Check login with phone empty")
     public void testPhoneEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
@@ -37,6 +41,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("Check login with password empty")
     public void testPwdEmpty() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();
@@ -48,6 +53,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("Check login with password and phone invalid")
     public void testPwdPhoneInvalid() {
         HomePage homePage = new HomePage(driver);
         homePage.clickYesCityBtn();

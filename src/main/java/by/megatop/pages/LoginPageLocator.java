@@ -1,4 +1,4 @@
-package by.megatop;
+package by.megatop.pages;
 
 public class LoginPageLocator {
     public static final String LOGIN_PAGE_TITLE_XPATH="//a[@href='/login']";

@@ -1,5 +1,6 @@
 package by.megatop;
 
+import by.megatop.pages.HomePage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
