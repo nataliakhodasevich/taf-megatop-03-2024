@@ -8,6 +8,14 @@ public class HomePageLocator {
     public static final String SEARCH_INPUT_XPATH= "(//input[@type='text'])[1]";
     public static final String SEARCH_RESULTS_FIRST_ITEM="(//picture[@data-v-ddc8fb4c]/img)[3]";
     public static final String SEARCH_RESULTS_FIRST_ITEM_TITLE="(//h1[@data-v-0944d46a]/span)[1]";
-    public static final String YES_COOKIE_BTN="//button[@data-v-1cbfc194][3]";
-
+    public static final String YES_COOKIE_BTN="(//div[@class='d-flex justify-center mt-5 px-4']/button[@type='button']/span[@class='v-btn__content'])[2]";
+    public static final String SHOES_MAIN_PAGE_BTN="//div[@class='v-toolbar__extension']//a[@href='/catalog/zhenshchiny/obuv']";
+    public static final String SANDALS_BTN_CATALOG= "//a[@href='/catalog/zhenshchiny/obuv/bosonozhki']";
+    public static final String SANDALS_FIRST_ITEM_XPATH="(//a[@href='/products/1619000205-bosonozhki-o_live_naturalle'])[2]";
+    public static final String ARTICUL_EXPECTED_XPATH="//span[@class='product__model font-weight-medium']";
+    public static final String ADD_TO_CART_BTN_ITEM_PAGE="(//div[@class=\'d-flex col col-12\']//button/span[@class=\'v-btn__content\'])[1]";
+    public static final String SELECT_SIZE_XPATH="//td[@class='text']";
+    public static final String ADD_TO_CART_SIZE_MODAL_XPATH= "//div[@class='d-flex justify-center']//button[@type='button']";
+    public static final String GO_TO_CART_BTN_XPATH="//div[@class='cart col col-12']//button[@type='button'][1]";
+    public static final String CART_ITEM_ARTICUL="//div[@class='text__brand']";
 }

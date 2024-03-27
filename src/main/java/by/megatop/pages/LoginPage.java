@@ -51,6 +51,6 @@ public class LoginPage {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PWD_XPATH)));
 
 
-        driver.findElement(By.xpath(LoginPageLocator.PWD_XPATH)).sendKeys(Utils.generateNumber());
+        driver.findElement(By.xpath(LoginPageLocator.PWD_XPATH)).sendKeys(Utils.generatePassword(8));
     }
 }
