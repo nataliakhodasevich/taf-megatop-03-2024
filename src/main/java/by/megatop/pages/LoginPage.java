@@ -30,7 +30,6 @@ public class LoginPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PHONE_XPATH)));
         clickPhoneInput();
-
         driver.findElement(By.xpath(LoginPageLocator.PHONE_XPATH)).sendKeys(Utils.generateNumber());
     }
 
@@ -49,8 +48,6 @@ public class LoginPage {
     public void sendKeysPwd() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(LoginPageLocator.PWD_XPATH)));
-
-
         driver.findElement(By.xpath(LoginPageLocator.PWD_XPATH)).sendKeys(Utils.generatePassword(8));
     }
 }
