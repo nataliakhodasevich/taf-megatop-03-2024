@@ -1,4 +1,4 @@
-package by.megatop;
+package by.megatop.ui;
 
 import by.megatop.pages.HomePage;
 import by.megatop.steps.Steps;
@@ -18,5 +18,17 @@ public class CartTest extends BaseTest {
         String expectedArticul = homePage.getTextProductPage();
         steps.addItemToCartStep();
         Assertions.assertTrue(homePage.getActualItemArticul().contains(expectedArticul));
+    }
+
+    @Test
+    @DisplayName("Check item is deleted from cart")
+    public void testItemDeletedFromCart() {
+        HomePage homePage = new HomePage(driver);
+        Steps steps = new Steps(driver, homePage);
+        steps.removeModalsMainPage();
+        steps.openItemFromCatalog();
+        steps.addItemToCartStep();
+        homePage.deleteFromCartBtnClick();
+        Assertions.assertEquals("Ваша корзина пуста", homePage.getTextEmptyCart());
     }
 }

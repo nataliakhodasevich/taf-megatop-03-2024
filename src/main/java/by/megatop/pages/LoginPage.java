@@ -1,6 +1,6 @@
 package by.megatop.pages;
 
-import by.megatop.Utils;
+import by.megatop.domain.Utils;
 import driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

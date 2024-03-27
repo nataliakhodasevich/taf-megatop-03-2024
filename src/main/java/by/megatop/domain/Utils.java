@@ -1,4 +1,4 @@
-package by.megatop;
+package by.megatop.domain;
 
 import org.apache.commons.text.RandomStringGenerator;
 

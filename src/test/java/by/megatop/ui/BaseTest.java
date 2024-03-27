@@ -1,4 +1,4 @@
-package by.megatop;
+package by.megatop.ui;
 
 import driver.Driver;
 import org.junit.jupiter.api.AfterEach;

@@ -1,4 +1,4 @@
-package by.megatop;
+package by.megatop.ui;
 import by.megatop.pages.HomePage;
 import by.megatop.pages.LoginPage;
 import by.megatop.steps.Steps;

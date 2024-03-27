@@ -1,10 +1,9 @@
-package by.megatop;
+package by.megatop.ui;
 
 import by.megatop.pages.HomePage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
 
 public class HomePageTest extends BaseTest {
     @Test

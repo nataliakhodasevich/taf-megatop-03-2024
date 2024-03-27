@@ -18,4 +18,6 @@ public class HomePageLocator {
     public static final String ADD_TO_CART_SIZE_MODAL_XPATH= "//div[@class='d-flex justify-center']//button[@type='button']";
     public static final String GO_TO_CART_BTN_XPATH="//div[@class='cart col col-12']//button[@type='button'][1]";
     public static final String CART_ITEM_ARTICUL="//div[@class='text__brand']";
+    public static final String DELETE_FROM_CART_BTN_XPATH="//button[@class='mx-auto v-btn v-btn--icon v-btn--round theme--light v-size--default'][1]";
+    public static final String CART_IS_EMPTY_TEXT_XPATH="//div[@class='text-center mt-2'][1]";
 }

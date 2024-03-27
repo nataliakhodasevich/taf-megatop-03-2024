@@ -134,4 +134,24 @@ public class HomePage {
                 });
         return driver.findElement(By.xpath(HomePageLocator.CART_ITEM_ARTICUL)).getText();
     }
+    public void deleteFromCartBtnClick(){
+        Awaitility.await()
+                .atMost(10, SECONDS)
+                .pollInterval(500, MILLISECONDS)
+                .until(() -> {
+                    // Здесь происходит поиск элемента
+                    return driver.findElements(By.xpath(HomePageLocator.DELETE_FROM_CART_BTN_XPATH)).size() > 0;
+                });
+        driver.findElement(By.xpath(HomePageLocator.DELETE_FROM_CART_BTN_XPATH)).click();
+    }
+    public String getTextEmptyCart(){
+        Awaitility.await()
+                .atMost(10, SECONDS)
+                .pollInterval(500, MILLISECONDS)
+                .until(() -> {
+                    // Здесь происходит поиск элемента
+                    return driver.findElements(By.xpath(HomePageLocator.CART_IS_EMPTY_TEXT_XPATH)).size() > 0;
+                });
+        return driver.findElement(By.xpath(HomePageLocator.CART_IS_EMPTY_TEXT_XPATH)).getText();
+    }
 }
