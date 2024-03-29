@@ -20,4 +20,7 @@ public class HomePageLocator {
     public static final String CART_ITEM_ARTICUL="//div[@class='text__brand']";
     public static final String DELETE_FROM_CART_BTN_XPATH="//button[@class='mx-auto v-btn v-btn--icon v-btn--round theme--light v-size--default'][1]";
     public static final String CART_IS_EMPTY_TEXT_XPATH="//div[@class='text-center mt-2'][1]";
+    public static final String ADD_TO_FAV_BTN_ITEM_PAGE="//button[@class='btn-gray btn-gray--dark v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default']";
+    public static final String FAV_ERROR_NOT_LOGGED="//div[@class='d-flex mx-auto']";
+
 }

@@ -154,4 +154,26 @@ public class HomePage {
                 });
         return driver.findElement(By.xpath(HomePageLocator.CART_IS_EMPTY_TEXT_XPATH)).getText();
     }
+
+    public void clickAddToFavBtn(){
+        Awaitility.await()
+                .atMost(10, SECONDS)
+                .pollInterval(500, MILLISECONDS)
+                .until(() -> {
+                    // Здесь происходит поиск элемента
+                    return driver.findElements(By.xpath(HomePageLocator.ADD_TO_FAV_BTN_ITEM_PAGE)).size() > 0;
+                });
+        driver.findElement(By.xpath(HomePageLocator.ADD_TO_FAV_BTN_ITEM_PAGE)).click();
+    }
+
+    public String getTextFavError(){
+        Awaitility.await()
+                .atMost(10, SECONDS)
+                .pollInterval(500, MILLISECONDS)
+                .until(() -> {
+                    // Здесь происходит поиск элемента
+                    return driver.findElements(By.xpath(HomePageLocator.FAV_ERROR_NOT_LOGGED)).size() > 0;
+                });
+        return driver.findElement(By.xpath(HomePageLocator.FAV_ERROR_NOT_LOGGED)).getText();
+    }
 }
