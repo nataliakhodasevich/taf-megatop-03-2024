@@ -54,7 +54,7 @@ public class HomePage {
 
     public void clickFirstItemSearchResults() {
         Awaitility.await()
-                .atMost(20, SECONDS)
+                .atMost(40, SECONDS)
                 .pollInterval(500, MILLISECONDS)
                 .until(() -> {
                     // Здесь происходит поиск элемента
@@ -65,7 +65,7 @@ public class HomePage {
 
     public String getItemTitle() {
         Awaitility.await()
-                .atMost(20, SECONDS)
+                .atMost(40, SECONDS)
                 .pollInterval(500, MILLISECONDS)
                 .until(() -> {
                     // Здесь происходит поиск элемента
