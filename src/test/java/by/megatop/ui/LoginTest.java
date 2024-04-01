@@ -1,4 +1,5 @@
 package by.megatop.ui;
+
 import by.megatop.pages.HomePage;
 import by.megatop.pages.LoginPage;
 import by.megatop.steps.Steps;
@@ -12,8 +13,8 @@ public class LoginTest extends BaseTest {
     @DisplayName("Check page is opened")
     public void isLoginPageOpened() {
         HomePage homePage = new HomePage(driver);
-        Steps steps=new Steps(driver,homePage);
-       steps.removeModalsMainPage();
+        Steps steps = new Steps(driver, homePage);
+        steps.removeModalsMainPage();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
         Assertions.assertEquals("ВХОД", loginPage.getLoginPageTitle());
@@ -23,7 +24,7 @@ public class LoginTest extends BaseTest {
     @DisplayName("Check login with both fields empty")
     public void testPhonePwdEmpty() {
         HomePage homePage = new HomePage(driver);
-        Steps steps=new Steps(driver,homePage);
+        Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
@@ -35,7 +36,7 @@ public class LoginTest extends BaseTest {
     @DisplayName("Check login with phone empty")
     public void testPhoneEmpty() {
         HomePage homePage = new HomePage(driver);
-        Steps steps=new Steps(driver,homePage);
+        Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
@@ -48,7 +49,7 @@ public class LoginTest extends BaseTest {
     @DisplayName("Check login with password empty")
     public void testPwdEmpty() {
         HomePage homePage = new HomePage(driver);
-        Steps steps=new Steps(driver,homePage);
+        Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);
@@ -61,7 +62,7 @@ public class LoginTest extends BaseTest {
     @DisplayName("Check login with password and phone invalid")
     public void testPwdPhoneInvalid() {
         HomePage homePage = new HomePage(driver);
-        Steps steps=new Steps(driver,homePage);
+        Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
         LoginPage loginPage = new LoginPage(driver);

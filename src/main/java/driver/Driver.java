@@ -9,12 +9,13 @@ public class Driver {
 
     private static WebDriver driver;
 
-    private Driver() {}
+    private Driver() {
+    }
 
     public static WebDriver getDriver() {
         if (driver == null) {
             driver = new ChromeDriver();
-           // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+            // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
             driver.manage().window().maximize();
         }
 

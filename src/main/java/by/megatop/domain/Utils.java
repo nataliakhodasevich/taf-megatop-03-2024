@@ -1,7 +1,5 @@
 package by.megatop.domain;
-
 import org.apache.commons.text.RandomStringGenerator;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

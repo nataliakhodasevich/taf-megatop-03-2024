@@ -1,4 +1,5 @@
 package by.megatop.steps;
+
 import by.megatop.pages.HomePage;
 import driver.Driver;
 import org.openqa.selenium.WebDriver;
@@ -6,10 +7,12 @@ import org.openqa.selenium.WebDriver;
 public class Steps {
     WebDriver driver;
     HomePage homePage;
-    public Steps(WebDriver driver, HomePage homePage){
-        this.driver= Driver.getDriver();
-        this.homePage=homePage;
+
+    public Steps(WebDriver driver, HomePage homePage) {
+        this.driver = Driver.getDriver();
+        this.homePage = homePage;
     }
+
     public void removeModalsMainPage() {
         homePage.clickYesCityBtn();
         homePage.clickYesCookie();
@@ -28,7 +31,7 @@ public class Steps {
         homePage.goTooCartBtnClick();
     }
 
-    public void clickSearchBtnAndSendKeysSearchInput(String item){
+    public void clickSearchBtnAndSendKeysSearchInput(String item) {
         homePage.clickSearchBtn();
         homePage.senKeysSearchInput(item);
     }
