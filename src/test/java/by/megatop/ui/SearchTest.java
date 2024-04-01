@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class SearchTest extends BaseTest {
     @Test
     @DisplayName("Search results displayed")
-    public void testSearch() throws InterruptedException {
+    public void testSearch(){
         HomePage homePage = new HomePage(driver);
         Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
@@ -19,7 +19,7 @@ public class SearchTest extends BaseTest {
 
     @Test
     @DisplayName("Check number of search results displayed")
-    public void testSearchResultsNumber() throws InterruptedException {
+    public void testSearchResultsNumber(){
         HomePage homePage = new HomePage(driver);
         Steps steps = new Steps(driver, homePage);
         steps.removeModalsMainPage();
