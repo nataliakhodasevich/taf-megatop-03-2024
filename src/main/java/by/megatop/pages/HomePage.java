@@ -53,18 +53,23 @@ public class HomePage {
     }
 
     public void clickFirstItemSearchResults() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM)));
+        Awaitility.await()
+                .atMost(20, SECONDS)
+                .pollInterval(500, MILLISECONDS)
+                .until(() -> {
+                    // Здесь происходит поиск элемента
+                    return driver.findElements(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM)).size() > 0;
+                });
         driver.findElement(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM)).click();
     }
 
     public String getItemTitle() {
         Awaitility.await()
-                .atMost(10, SECONDS)
+                .atMost(20, SECONDS)
                 .pollInterval(500, MILLISECONDS)
                 .until(() -> {
                     // Здесь происходит поиск элемента
-                    return driver.findElements(By.xpath("(//h1[@data-v-0944d46a]/span)[1]")).size() > 0;
+                    return driver.findElements(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM_TITLE)).size() > 0;
                 });
         return driver.findElement(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM_TITLE)).getText();
     }
