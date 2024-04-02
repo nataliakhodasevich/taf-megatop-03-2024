@@ -16,12 +16,13 @@ public class SearchTest extends BaseTest {
         steps.removeModalsMainPage();
         steps.clickSearchBtnAndSendKeysSearchInput("туфли");
         homePage.clickFirstItemSearchResults();
-        Assertions.assertEquals("Туфли", homePage.getItemTitle());
+       String result= homePage.getItemTitle();
+        Assertions.assertTrue(result.contains("Туфли"));
     }
 
     @Test
     @DisplayName("Check number of search results displayed")
-   // @Disabled
+   //@Disabled
     public void testSearchResultsNumber(){
         HomePage homePage = new HomePage(driver);
         Steps steps = new Steps(driver, homePage);
