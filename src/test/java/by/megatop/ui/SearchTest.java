@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class SearchTest extends BaseTest {
     @Test
     @DisplayName("Search results displayed")
-    @Disabled
+    //@Disabled
     public void testSearch(){
         HomePage homePage = new HomePage(driver);
         Steps steps = new Steps(driver, homePage);
@@ -21,7 +21,7 @@ public class SearchTest extends BaseTest {
 
     @Test
     @DisplayName("Check number of search results displayed")
-    @Disabled
+   // @Disabled
     public void testSearchResultsNumber(){
         HomePage homePage = new HomePage(driver);
         Steps steps = new Steps(driver, homePage);
