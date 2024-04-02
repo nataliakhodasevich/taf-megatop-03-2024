@@ -47,11 +47,11 @@ public class HomePage {
 
     public int getNumberOfSearchResults() {
         Awaitility.await()
-                .atMost(40, SECONDS)
-                .pollInterval(500, MILLISECONDS)
+                .atMost(60, SECONDS)
+                .pollInterval(100, MILLISECONDS)
                 .until(() -> {
                     // Здесь происходит поиск элемента
-                    return driver.findElements(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM)).size() > 0;
+                    return driver.findElements(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM)).size() > 39;
                 });
         List<WebElement> results = driver.findElements(By.xpath(HomePageLocator.SEARCH_RESULTS_FIRST_ITEM));
         return results.size();

@@ -6,8 +6,8 @@ public class HomePageLocator {
     public static final String SELECT_CITY_YES_BTN = "//button[@data-v-4d496a9a][1]";
     public static final String SEARCH_BTN = "//button[@data-v-2b81bd6f]";
     public static final String SEARCH_INPUT_XPATH = "(//input[@type='text'])[1]";
-    public static final String SEARCH_RESULTS_FIRST_ITEM = "//div[@class='row mx-0 content']";
-    public static final String SEARCH_RESULTS_FIRST_ITEM_TITLE = "(//h1[@data-v-0944d46a]/span)[1]";
+    public static final String SEARCH_RESULTS_FIRST_ITEM = "//div[@class='image-wrap']";
+    public static final String SEARCH_RESULTS_FIRST_ITEM_TITLE = "//div[@class='row product']";
     public static final String YES_COOKIE_BTN = "(//div[@class='d-flex justify-center mt-5 px-4']/button[@type='button']/span[@class='v-btn__content'])[2]";
     public static final String SHOES_MAIN_PAGE_BTN = "//div[@class='v-toolbar__extension']//a[@href='/catalog/zhenshchiny/obuv']";
     public static final String SANDALS_BTN_CATALOG = "//a[@href='/catalog/zhenshchiny/obuv/bosonozhki']";
