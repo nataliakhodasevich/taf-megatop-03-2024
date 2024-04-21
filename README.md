@@ -1,5 +1,7 @@
 # Megatop 
 
+AUT  [Megatop](https://megatop.by/)
+
 ## Tools
 
 * Postman
@@ -12,27 +14,27 @@
 
 ## Segments tested:
 
-cart
-search
-login
-favourites
-home page
+* cart
+* search
+* login
+* favourites
+* home page
 
 
 ## Project structure(main)
 
-Page Objects для страниц(PageLocator и Page с методами для работы с элементами)
-Генератор логина и пароля(domain.Utils)
-Steps для объединения цепочек повторяющихся действий
-Для API тестирования LoginService(перегруженный метод getBody и Map для headers) и SearchService с Map для headers.
-driver (singleton pattern)
+* Page Objects for pages(PageLocator and Page which contains methods for interactions with elements)
+* Login and password generation (domain.Utils)
+* Steps for complex actions
+* For API testing: LoginService(getBody and Map for headers) and SearchService with Map for headers.
+* driver (singleton pattern)
 
 ## Project structure(test)
 
-BaseTest(настройка драйвера)
-тестовые классы для:
-Логина
-Корзины
-Поиска
-Избранного
-Домашней страницы
+BaseTest(driver settings)
+test classes for:
+* Login
+* Cart
+* Search
+* Favourites
+* HomePage
