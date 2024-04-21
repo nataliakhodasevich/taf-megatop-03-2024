@@ -12,7 +12,7 @@ AUT  [Megatop](https://megatop.by/)
 * Jenkins
 * Maven
 
-## Segments tested:
+## Segments for testing
 
 * cart
 * search
