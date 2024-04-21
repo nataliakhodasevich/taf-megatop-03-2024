@@ -2,13 +2,13 @@
 
 ## Tools
 
-*Postman
-*IntelliJ IDEA
-*Selenium WebDriver
-*REST Assured
-*JUnit
-*Jenkins
-*Maven
+* Postman
+* IntelliJ IDEA
+* Selenium WebDriver
+* REST Assured
+* JUnit
+* Jenkins
+* Maven
 
 ## Segments tested:
 
