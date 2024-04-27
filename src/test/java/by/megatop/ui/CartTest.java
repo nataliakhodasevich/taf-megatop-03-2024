@@ -11,8 +11,8 @@ public class CartTest extends BaseTest {
     @Test
     @DisplayName("Check item is added to cart")
     public void testItemAddedToCart() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         steps.openItemFromCatalog();
         String expectedArticul = homePage.getTextProductPage();
@@ -23,8 +23,8 @@ public class CartTest extends BaseTest {
     @Test
     @DisplayName("Check item is deleted from cart")
     public void testItemDeletedFromCart() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         steps.openItemFromCatalog();
         steps.addItemToCartStep();

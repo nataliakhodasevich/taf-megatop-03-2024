@@ -12,22 +12,22 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Check page is opened")
     public void isLoginPageOpened() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         Assertions.assertEquals("ВХОД", loginPage.getLoginPageTitle());
     }
 
     @Test
     @DisplayName("Check login with both fields empty")
     public void testPhonePwdEmpty() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         loginPage.clickLoginBtn();
         Assertions.assertEquals("Телефон обязательное поле", loginPage.getErrorText());
     }
@@ -35,11 +35,11 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Check login with phone empty")
     public void testPhoneEmpty() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         loginPage.sendKeysPwd();
         loginPage.clickLoginBtn();
         Assertions.assertEquals("Телефон обязательное поле", loginPage.getErrorText());
@@ -48,11 +48,11 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Check login with password empty")
     public void testPwdEmpty() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         loginPage.sendKeysPhone();
         loginPage.clickLoginBtn();
         Assertions.assertEquals("Вы ввели неверный номер телефона и/или пароль", loginPage.getErrorText());
@@ -61,11 +61,11 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Check login with password and phone invalid")
     public void testPwdPhoneInvalid() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         homePage.clickLoginBtn();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         loginPage.sendKeysPhone();
         loginPage.sendKeysPwd();
         loginPage.clickLoginBtn();

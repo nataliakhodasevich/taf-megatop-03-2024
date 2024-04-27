@@ -7,7 +7,7 @@ public class SearchTest {
     @Test
     public void testSearch() {
         given()
-                .queryParams(SearchService.getQueryParams())
+                .queryParams(SearchService.getQueryParams("туфли"))
                 .when()
                 .get("https://megatop.by/api/v1/search/process")
                 .then()

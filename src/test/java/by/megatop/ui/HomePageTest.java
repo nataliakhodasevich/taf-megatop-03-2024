@@ -9,7 +9,7 @@ public class HomePageTest extends BaseTest {
     @Test
     @DisplayName("Check the main page is opened")
     public void isPageOpened() {
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage();
         Assertions.assertEquals("© Megatop.\n" +
                 "Все права защищены. 2023", homePage.getCopyRightText());
     }

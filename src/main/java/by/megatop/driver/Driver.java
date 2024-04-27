@@ -1,4 +1,4 @@
-package driver;
+package by.megatop.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +15,6 @@ public class Driver {
     public static WebDriver getDriver() {
         if (driver == null) {
             driver = new ChromeDriver();
-            // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
             driver.manage().window().maximize();
         }
 

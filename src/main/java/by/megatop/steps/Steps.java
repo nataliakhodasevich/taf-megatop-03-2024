@@ -1,16 +1,16 @@
 package by.megatop.steps;
 
 import by.megatop.pages.HomePage;
-import driver.Driver;
+import by.megatop.driver.Driver;
 import org.openqa.selenium.WebDriver;
 
 public class Steps {
     WebDriver driver;
-    HomePage homePage;
+    HomePage homePage=new HomePage();
 
-    public Steps(WebDriver driver, HomePage homePage) {
+    public Steps() {
         this.driver = Driver.getDriver();
-        this.homePage = homePage;
+
     }
 
     public void removeModalsMainPage() {
@@ -23,7 +23,6 @@ public class Steps {
         homePage.clickCatalogSection();
         homePage.clickFirstCatalogItem();
     }
-
 
     public void addItemToCartStep() {
         homePage.clickAddToCart();

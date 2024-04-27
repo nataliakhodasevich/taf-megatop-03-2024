@@ -9,8 +9,8 @@ public class FavouritesTest extends BaseTest {
     @Test
     @DisplayName("Check not adding to favorites while not logged in")
     public void testAddToFavourites() {
-        HomePage homePage = new HomePage(driver);
-        Steps steps = new Steps(driver, homePage);
+        HomePage homePage = new HomePage();
+        Steps steps = new Steps();
         steps.removeModalsMainPage();
         steps.openItemFromCatalog();
         homePage.clickAddToFavBtn();
