@@ -12,7 +12,7 @@ AUT  [Megatop](https://megatop.by/)
 * Jenkins
 * Maven
 
-## Segments tested:
+## Segments for testing
 
 * cart
 * search
@@ -31,7 +31,7 @@ AUT  [Megatop](https://megatop.by/)
 
 ## Project structure(test)
 
-BaseTest(driver settings)
+BaseTest(driver settings) and 
 test classes for:
 * Login
 * Cart
