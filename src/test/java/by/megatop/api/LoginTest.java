@@ -96,6 +96,6 @@ public class LoginTest {
                 .post(LoginService.LOGIN_URL)
                 .then()
                 .log().all()
-                .assertThat().statusCode(500);
+                .assertThat().statusCode(422);
     }
 }
