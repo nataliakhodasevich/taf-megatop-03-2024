@@ -44,7 +44,7 @@ public class LoginTest {
                 .when()
                 .post(LoginService.LOGIN_URL)
                 .then()
-                .assertThat().statusCode(500);
+                .assertThat().statusCode(422);
     }
 
     @Test
