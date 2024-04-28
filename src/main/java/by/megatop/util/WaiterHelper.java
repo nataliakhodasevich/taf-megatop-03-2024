@@ -18,7 +18,7 @@ public class WaiterHelper {
     public static void waitAwaitilityUntilElementAppears(int minNumberOfElements, String locator){
         Awaitility.await()
                 .atMost(120, SECONDS)
-                .pollInterval(100, MILLISECONDS)
+                .pollInterval(50, MILLISECONDS)
                 .until(() -> {
                     return Driver.getDriver().findElements(By.xpath(locator)).size() > minNumberOfElements;
                 });
