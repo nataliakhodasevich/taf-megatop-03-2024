@@ -35,8 +35,6 @@
             <artifactId>awaitility</artifactId>
             <version>4.2.1</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -126,5 +124,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
